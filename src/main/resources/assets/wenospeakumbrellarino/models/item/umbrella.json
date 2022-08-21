@@ -1,0 +1,16 @@
+{
+  "overrides": [
+    {
+      "predicate": {
+        "open": 0
+      },
+      "model": "wenospeakumbrellarino:item/umbrella_closed"
+    },
+    {
+      "predicate": {
+        "open": 1
+      },
+      "model": "wenospeakumbrellarino:item/umbrella_open"
+    }
+  ]
+}

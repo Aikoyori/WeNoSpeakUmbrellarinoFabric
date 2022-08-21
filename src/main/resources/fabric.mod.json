@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "wenospeakumbrellarino",
+  "version": "${version}",
+  "name": "We no speak Umbrellarino",
+  "description": "Adds Umbrella that slows your fall",
+  "authors": ["Aikoyori"],
+  "contact": {
+    "sources": "https://github.com/Aikoyori/WeNoSpeakUmbrellarinoFabric",
+    "homepage": "https://modrinth.com/mod/wenospeakumbrellarino",
+    "issues": "https://modrinth.com/mod/wenospeakumbrellarino/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/wenospeakumbrellarino/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "xyz.aikoyori.wenospeakumbrellarino.client.WenospeakumbrellarinoClient"
+    ],
+    "main": [
+      "xyz.aikoyori.wenospeakumbrellarino.Wenospeakumbrellarino"
+    ]
+  },
+  "mixins": [
+    "wenospeakumbrellarino.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
