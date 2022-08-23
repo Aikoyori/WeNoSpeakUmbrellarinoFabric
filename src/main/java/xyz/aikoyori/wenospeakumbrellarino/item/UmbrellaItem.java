@@ -36,12 +36,10 @@ public class UmbrellaItem extends Item {
             var isOpen = stack.getOrCreateNbt().getBoolean("isOpen");
 
             //If it is, and we're falling...
-            if (liv.getVelocity().getY() < 0) {
-                if(isOpen){
-                    //Reduce vertical velocity!
-                    liv.setVelocity(liv.getVelocity().multiply(1,0.8,1));
-                    liv.onLanding();
-                }
+            if(isOpen){
+                //Reduce vertical velocity!
+                liv.setVelocity(liv.getVelocity().multiply(1,0.8,1));
+                liv.onLanding();
             }
         }
 

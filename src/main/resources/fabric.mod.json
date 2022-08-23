@@ -22,7 +22,6 @@
     ]
   },
   "mixins": [
-    "wenospeakumbrellarino.mixins.json"
   ],
   "depends": {
     "fabric": "*",
