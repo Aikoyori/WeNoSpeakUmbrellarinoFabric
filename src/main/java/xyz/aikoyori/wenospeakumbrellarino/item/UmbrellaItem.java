@@ -28,17 +28,17 @@ public class UmbrellaItem extends Item {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (entity instanceof LivingEntity liv) {
-            //If this stack isn't being held, do nothing
-            if(liv.getMainHandStack() != stack && liv.getOffHandStack() != stack)
+            // If this stack isn't being held, do nothing
+            if (liv.getMainHandStack() != stack && liv.getOffHandStack() != stack)
                 return;
 
-            //Check if the umbrella is open...
+            // Check if the umbrella is open...
             var isOpen = stack.getOrCreateNbt().getBoolean("isOpen");
 
-            //If it is, and we're falling...
-            if(isOpen){
+            // If it is, and we're falling...
+            if (isOpen) {
                 //Reduce vertical velocity!
-                liv.setVelocity(liv.getVelocity().multiply(1,0.8,1));
+                liv.setVelocity(liv.getVelocity().multiply(1, 0.8, 1));
                 liv.onLanding();
             }
         }
